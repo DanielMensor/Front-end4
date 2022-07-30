@@ -1,23 +1,7 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #3772FF;
-    display: flex;
+.header{
+    margin: 3rem;
 }
 
-.header {
-
-    background: url("../../Public/Images/Forma\ 1.png") 0 0 no-repeat;
-    background-size: cover;
-    width: 352.11px;
-    height: 295px;
-}
-
-.nav {
-    display: flex;
-    margin: 48px 0 0 48px;
-}
-
-.home {
-    padding-right: 58.61px;
+.home{
+    margin-right: 3.6rem;
 }

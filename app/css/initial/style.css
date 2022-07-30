@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../../Public/Images/Forma\ 1.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 20rem;
+    min-height: 100vh;
+    background-color: #3772FF;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.logo img {
+    height: 3rem;
+}
