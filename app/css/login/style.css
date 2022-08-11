@@ -1,0 +1,99 @@
+body{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.fundo {
+    background-image: url(../../Public/Images/Patas.svg),url(../../Public/Images/Forma\ 1.png),url(../../Public/Images/Forma\ 2\ \(1\).svg);
+    background-repeat: no-repeat;
+    background-position: 12rem -0.5rem,top left, 0 23rem;
+    background-size: 11.87rem 15.2rem,22rem 18.43rem, 5.17rem 25.9rem;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main img{
+    margin: 2rem 0 .5rem 0;
+}
+
+.text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #3772FF;
+
+    margin: 3rem 0 2.625rem 0;
+}
+
+form {
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+form div label{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #737380;
+}
+
+form div input{
+    width: 19.5rem;
+    height: 2.5rem;
+    background: #F7F7F7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    border: none;
+    text-align: center;
+}
+
+a {
+    margin-top: 8px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #FC7071;
+}
+
+button {
+    height: 2.5rem;
+    width: 9.25rem;
+    color: #fff;
+    background: #FC7071;
+    border-radius: 6px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    margin-bottom: 15.375rem;
+    margin-top: 1.5rem;
+}
+
