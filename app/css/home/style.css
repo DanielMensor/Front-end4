@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.fundo {
+    background-image: url(../../Public/Images/Forma\ 1.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 22rem 18.43rem;
+    min-height: 100vh;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 20px;
+    color: #3772FF;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width:14.125rem ;
+    margin-bottom: 2rem;
+}
+
+.pets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    background-color: #F6F6F6;
+    width: 22.5rem;
+    height: 12.25rem;
+}
+
+.info-pet {
+    text-align: left;
+}
+
+.info-pet h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3772FF;
+}
+
+.infos{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #737380;
+}
+
+.city{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #737380;
+}
+
+.msg{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    color: #737380;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.img-pet {
+    margin: 1.5rem 0 0 1.5rem;
+    size: 9.25rem;
+}

@@ -1,7 +1,14 @@
-.header{
-    margin: 3rem;
+.header {
+    margin: 3rem 0 3rem 3rem;
 }
 
-.home{
+.home {
     margin-right: 3.6rem;
+    text-decoration: none;
+}
+
+.usuario {
+    width: 40px;
+    height: 40px;
+    margin: 2.5rem 0 0 7.8rem;
 }
