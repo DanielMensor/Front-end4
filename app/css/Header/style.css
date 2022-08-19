@@ -1,14 +1,17 @@
-/* Geral css */
+
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
+
+
+}
+.backgroundheader{
     background-image: url(../../Public/Images/Forma\ 1.png);
     background-repeat: no-repeat;
     background-position: top left;
-    background-size: 22rem 18.43rem;
-    min-height: 100vh;
+    background-size: 561px;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
@@ -17,13 +20,65 @@ main {
     align-items: center;
 }
 
-/* Header */
-.header {
-    margin: 3rem 0 3rem 3rem;
+.logoheader{
+    text-decoration: none;
+}
+
+.logoheader img{
+    display: inline;
+    width: 8rem;
+    
+    
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 15.68rem;
+    margin: 4rem 0 3rem 10rem;
 }
 
 .home {
-    margin-right: 3.6rem;
+    margin: 0 3rem 0 3rem;
+    text-decoration: none;
+}
+
+.usuario {
+    width: 40px;
+    height: 40px;
+    margin: 3rem 0 3rem 3rem;
+}
+
+
+@media (max-width: 1024px){
+    nav {
+        margin: 4rem 0 3rem 3rem;
+        width: 19rem;
+    }
+
+
+}
+
+
+@media (max-width: 561px){
+
+
+
+.backgroundheader {
+    background-size: 98%;
+    min-height: 100vh;
+}
+
+
+
+nav {
+    margin: 3rem 0 3rem 3rem;
+    display: block;
+}
+
+.home {
+    margin: 0 3.6rem 0 0;
     text-decoration: none;
 }
 
@@ -32,4 +87,12 @@ main {
     height: 40px;
     margin: 2.5rem 0 0 7.8rem;
 }
+
+.logoheader{
+    display: none;
+}
+}
+
+
+
 

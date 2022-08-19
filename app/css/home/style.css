@@ -1,3 +1,10 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.usuario{
+    margin-right: 2.3rem;
+}
 .text{
     font-family: 'Poppins';
     font-style: normal;
@@ -18,13 +25,13 @@
     justify-content: center;
     gap: 1rem;
 }
-.teste{
+/* .backgroundheader{
     background-image: url(../../Public/Images/Forma\ 1.png);
     background-repeat: no-repeat;
     background-position: top left;
     background-size: 22rem 18.43rem;
     min-height: 100vh;
-}
+} */
 .card{
     display: grid;
     grid-template-columns: 50% 1fr;
