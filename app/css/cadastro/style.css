@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -7,29 +7,35 @@ body{
 }
 
 .fundo {
-    background-image: url(../../Public/Images/Patas.svg),url(../../Public/Images/Forma\ 2\ \(1\).svg);
+    background-image: url(../../Public/Images/Patas.svg), url(../../Public/Images/Forma\ 2.svg);
     background-repeat: no-repeat;
-    background-position: 105% -0.6rem, 0 23rem;
-    background-size: 18.25rem 23rem, 5.17rem 25.9rem;
+    background-position: 105% -0.6rem, center right;
+    background-size: 18.25rem 23rem, 8.4rem 41.5rem;
     min-height: 100vh;
 }
 
-main img{
-    margin: 2rem 0 .5rem 0;
+.adopet {
+    justify-content: center;
+    height: 62px;
+    margin: 0 0 40px 0;
 }
 
 .text {
     color: #3772FF;
-    width: 19.5rem;
+    width: 525px;
     text-align: center;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 21px;
 }
 
-.form{
+.jump {
+    display: none;
+}
+
+.form {
     margin: .5rem;
     display: flex;
     flex-direction: column;
@@ -37,25 +43,25 @@ main img{
     gap: 20px;
 }
 
-.form div{
+form div {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4px;
 }
 
-.form div label{
+form div label {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
-    color: #737380;;
+    color: #737380;
+    ;
 }
 
-.form div input{
-    width: 19.5rem;
-    height: 2.5rem;
+form div input {
+    height: 40px;
     background: #F7F7F7;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
     border-radius: 6px;
@@ -63,19 +69,27 @@ main img{
     text-align: center;
 }
 
-input::placeholder{
+.infos{
+    width: 552px;
+}
+
+.senha{
+    width: 362px;
+}
+
+input::placeholder {
     text-align: center;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 16px;
     color: #BCBCBC;
 }
 
 button {
     height: 2.5rem;
-    width: 9.25rem;
+    width: 164px;
     color: #fff;
     background: #FC7071;
     border-radius: 6px;
@@ -83,16 +97,86 @@ button {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     border: none;
     margin-bottom: 6.5rem;
     margin-top: 4px;
 }
 
-@media (max-width: 590px){
-    .fundo{
+@media (max-width:1024px){
+    .adopet{
+        height: 62px;
+    }
+    .text{
+        width: 525px;
+        text-align: center;
+        margin-bottom: 72px;
+    }
+    form div label{
+        font-size: 16px;
+    }
+    .input{
+        width: 344px;
+    }
+
+    input::placeholder {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 590px) {
+    .fundo {
+        background-position: 100% -0.6rem, center right;
+        background-size: 37%, 8.4rem 41.5rem;
+    }
+
+    .adopet {
+        height: 34.36px;
+    }
+
+    .text {
+        font-size: 16px;
+        width: 312px;
+
+    }
+
+    .jump {
+        display: block;
+    }
+
+    form div label {
+        font-size: 16px;
+    }
+
+    form div input {
+        width: 19.5rem;
+    }
+    input::placeholder {
+        font-size: 12px;
+    }
+
+    button {
+        width: 9.25rem;
+        font-size: 16px;
+    }
+
+
+}
+
+@media(max-width:460px) {
+    .fundo {
+        background-image: url(../../Public/Images/Patas.svg), url(../../Public/Images/Forma\ 2\ \(1\).svg);
+        background-repeat: no-repeat;
         background-position: 100% -0.6rem, 0 23rem;
         background-size: 37%, 5.17rem 25.9rem;
+    }
+}
+
+@media (min-height: 957px) {
+    .footer {
+        position: absolute;
+        bottom: 0;
     }
 }

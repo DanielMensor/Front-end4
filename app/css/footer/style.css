@@ -8,3 +8,10 @@
     justify-content: center;
 
 }
+
+ @media (min-height: 1136px) {
+    .footer{
+        position: absolute;
+        bottom: 0;
+    }
+}

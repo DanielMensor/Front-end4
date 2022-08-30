@@ -9,36 +9,28 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 18px;
     line-height: 20px;
     color: #3772FF;
     display: flex;
     align-items: center;
     text-align: center;
-    width:14.125rem ;
+    width: 23.375rem;
     margin-bottom: 2rem;
 }
 
-.pets {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-}
-/* .backgroundheader{
-    background-image: url(../../Public/Images/Forma\ 1.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: 22rem 18.43rem;
-    min-height: 100vh;
-} */
 .card{
     display: grid;
     grid-template-columns: 50% 1fr;
-    width: 22.5rem;
+    width: 22.7rem;
     height: 12.25rem;
     background-color: #f7f7f7;
     z-index: -1;
+}
+
+.img-pet {
+    margin: 1.5rem 0 0 1.5rem;
+    size: 9.25rem;
 }
 
 .info-pet {
@@ -84,7 +76,74 @@
     gap: 0.5rem;
 }
 
-.img-pet {
-    margin: 1.5rem 0 0 1.5rem;
-    size: 9.25rem;
+@media (max-width:704px){
+    .pets {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 0;
+    }
 }
+
+@media (max-width: 561px){
+    .card{
+        width: 22.5rem;
+    }
+    .text{
+        font-size: 16px;
+        width:14.125rem ;
+    }
+    .jump{
+        display: none;
+    }
+
+}
+
+@media (min-width: 1024px){
+    header{
+        margin-bottom: 70px;
+    }
+
+    .text{
+        width: 414px;
+        margin-bottom: 40px;
+    }
+    .jump{
+        display: none;
+    }
+    
+}
+
+@media (min-width:704px){
+    .pets{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8"
+        "card9";
+    }
+
+    .card{
+        width: 21.5rem;
+    }
+}
+
+@media(min-width:1125px){
+    .pets{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "card1 card2 card3"
+        "card4 card5 card6"
+        "card7 card8 card9";
+        margin-bottom: 2rem;
+    }
+
+}
+

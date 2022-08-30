@@ -5,8 +5,8 @@ body {
 .fundo{
     background-image:  url(../../Public/Images/Forma\ 2.svg);
     background-repeat: no-repeat;
-    background-position: center right;
-    background-size: 5.25rem 26rem;
+    background-position: 100% 50%;
+    background-size: 134.45px 664px;
 }
 
 main {
@@ -15,19 +15,17 @@ main {
 
 .logo {
     text-align: center;
-    margin-top: 2.8rem;
-
 }
 
 .logo img {
-    height: 3rem;
+    height: 64px;
 }
 
 main h3 {
     font-family: 'IBM Plex Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 1.62rem;
+    font-size: 28px;
     line-height: 3rem;
     margin: 1.5rem 0 1rem 0;
 }
@@ -36,9 +34,12 @@ main p {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 26px;
     margin: 0 3.5rem;
     text-align: center;
+    font-size: 18px;
+    width: 21.5rem;
+    
 }
 
 main section {
@@ -51,7 +52,7 @@ main section {
 }
 
 main section a {
-    width: 11.25rem;
+    width: 21.5rem;
     height: 2rem;
     background-color: #FC7071;
     color: #fff;
@@ -59,26 +60,64 @@ main section a {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 18px;
     cursor: pointer;
     border: none;
     box-shadow: 1px 1px rgb(41, 40, 40);
     text-align: center;
     text-decoration: none;
-    
     padding-top: .25rem;
 }
 
 .voidSpace {
-    height: 18rem;
-    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    height: 26rem;
+    background-image: url(../../Public/Images/Ilustração\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: 45% 20px;
+    background-size: 21.125rem 26.375rem;
 }
 
-.ilustracao {
-    position: absolute;
-    top: 530px;
-    left: 33.66px;
-    z-index: -1;
-    width: 15.5rem;
-    height: 19.5rem;
+@media(max-width:590px){
+    .fundo{
+    background-position: 100% 50%;
+    background-size: 20%;
+}
+    .voidSpace {
+        height: 19rem;
+        background-position: 33px 10px;
+        background-size: 15.5rem 19.5rem;
+}
+
+main section a {
+    width: 11.25rem;
+    font-size: 16px;
+
+}
+
+.logo {
+    margin-top: 2.8rem;
+}
+
+main p{
+    line-height: 24px;
+    width:248px;
+    font-size: 16px;
+}
+.logo img {
+    height: 3rem;
+}
+}
+
+@media (min-height: 1025px) {
+    .voidSpace{
+        visibility: hidden;
+    }
+    .footer{
+        position: absolute;
+        bottom: 0;
+    } 
+    .logo img {
+        height: 64px;
+    }
 }

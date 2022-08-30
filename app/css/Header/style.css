@@ -1,10 +1,8 @@
-
 body {
     margin: 0;
     padding: 0;
-
-
 }
+
 .backgroundheader{
     background-image: url(../../Public/Images/Forma\ 1.png);
     background-repeat: no-repeat;
@@ -14,10 +12,11 @@ body {
     flex-direction: column;
 }
 
-main {
+nav{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    width: 15.68rem;
+    margin: 4rem 0 2rem 10rem;
 }
 
 .logoheader{
@@ -27,16 +26,6 @@ main {
 .logoheader img{
     display: inline;
     width: 8rem;
-    
-    
-}
-
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    width: 15.68rem;
-    margin: 4rem 0 3rem 10rem;
 }
 
 .home {
@@ -50,31 +39,35 @@ nav{
     margin: 3rem 0 3rem 3rem;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 @media (max-width: 1024px){
     nav {
-        margin: 4rem 0 3rem 3rem;
+        margin: 4rem 0 11.75rem 3rem;
         width: 19rem;
     }
-
 
 }
 
 
 @media (max-width: 561px){
 
-
-
 .backgroundheader {
     background-size: 98%;
     min-height: 100vh;
 }
 
-
-
 nav {
-    margin: 3rem 0 3rem 3rem;
+    margin: 3rem 0 20% 3rem;
     display: block;
+}
+
+.logoheader{
+    display: none;
 }
 
 .home {
@@ -87,11 +80,11 @@ nav {
     height: 40px;
     margin: 2.5rem 0 0 7.8rem;
 }
+}
 
-.logoheader{
-    display: none;
-}
-}
+
+
+
 
 
 
